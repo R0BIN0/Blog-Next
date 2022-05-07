@@ -1,0 +1,23 @@
+.section__container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 3rem auto 0 auto;
+  padding: 0 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: rgb(43, 43, 43);
+}
+
+.card__container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
