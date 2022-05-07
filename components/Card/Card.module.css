@@ -22,6 +22,7 @@
 }
 
 .link {
+  font-size: 0.9rem;
   color: rgb(0, 110, 255);
   text-decoration: underline;
 }

@@ -10,8 +10,20 @@ const Home: NextPage = () => {
         Le blog communaitre des afficionados de développement web
       </p>
       <div className={styles.card__container}>
-        <Card />
-        <Card />
+        <Card
+          title="Lisez les articles"
+          subtitle="Maximisez votre culture web"
+          description="Chaque auteur tente de vous apporter de valeur possible par article"
+          link="Visite le blog"
+          href="/blog"
+        />
+        <Card
+          title="Faites un tour vers la liste de membres"
+          subtitle="Faites-vous des amis"
+          description="Ajoutez, invitez et discutez avec les différents membres"
+          link="Découvre la liste de membres"
+          href="/userList"
+        />
       </div>
     </section>
   );
