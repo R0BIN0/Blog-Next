@@ -1,0 +1,17 @@
+.section__container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 3rem auto 0 auto;
+  padding: 0 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.subtitle {
+  color: rgb(43, 43, 43);
+}
