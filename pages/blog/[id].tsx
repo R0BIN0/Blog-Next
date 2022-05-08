@@ -15,10 +15,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const res = await fetch("http://jsonplaceholder.typicode.com/posts");
   const data: Post[] = await res.json();
 
+  const paths = data.map((item) => ({
+    params: { id: String(item.id) },
+  }));
+
   return {
-    paths: data.map((item) => {
-      return { params: { id: String(item.id) } };
-    }),
+    paths,
     fallback: false,
   };
 };
