@@ -1,3 +1,6 @@
+export interface getPost {
+  data: Post;
+}
 export interface getPostResults {
   data: Post[];
 }
