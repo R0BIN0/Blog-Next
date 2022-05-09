@@ -1,7 +1,7 @@
 import { GetStaticProps } from "next";
 import Link from "next/link";
 import styles from "../../styles/UserList.module.css";
-import { getUserResults } from "../../config/types";
+import { getUserResults, User } from "../../config/types";
 
 const UserList = ({ data }: getUserResults) => {
   return (
@@ -11,7 +11,7 @@ const UserList = ({ data }: getUserResults) => {
         {data.map((item) => (
           <div className={styles.user__box}>
             <p className={styles.user__title}>{item.name}</p>
-            <Link href={`/userList/${item.id}`}>
+            <Link href={`/userList/${String(item.id)}`}>
               <a className={styles.user__link}>Contacter</a>
             </Link>
           </div>
@@ -23,7 +23,7 @@ const UserList = ({ data }: getUserResults) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
-  const data = await res.json();
+  const data: User[] = await res.json();
 
   return {
     props: { data },

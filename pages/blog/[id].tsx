@@ -1,4 +1,4 @@
-import { GetStaticPaths, GetStaticProps } from "next";
+import { GetStaticPaths } from "next";
 import styles from "../../styles/Article.module.css";
 import { Post, getPost } from "../../config/types";
 
