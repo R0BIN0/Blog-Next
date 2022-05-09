@@ -15,6 +15,10 @@ export interface Post {
 
 // ============================ USER ============================
 
+export interface getUser {
+  data: User;
+}
+
 export interface getUserResults {
   data: User[];
 }
